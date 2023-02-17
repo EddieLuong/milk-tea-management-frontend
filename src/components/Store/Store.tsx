@@ -99,6 +99,7 @@ const Store = () => {
         {sortedProductsOfMenu.map((product) => (
           <Grid
             item
+            xl={3}
             lg={4}
             md={6}
             sm={12}

@@ -64,10 +64,16 @@ export const ProductItemCard = styled(Card)(({ theme }) => ({
   flexDirection: 'column',
   justifyContent: 'space-evenly',
   marginTop: '40px',
-  padding: '0px 20px 10px 20px',
+  padding: '0 20px',
   borderRadius: '5px',
   color: theme.palette.primary.main,
   minHeight: '260px',
+  [theme.breakpoints.up('lg')]: {
+    maxWidth: '80%',
+  },
+  [theme.breakpoints.up('md')]: {
+    maxWidth: '90%',
+  },
 }));
 
 export const ProductItemHeader = styled('div')``;
